@@ -1,0 +1,19 @@
+{
+    "name": "GutePopUpBlock",
+    "description": "Blocks the GuteFrage \"PlEaSe dIsAbLe yOuR AdBlOcKer\" popup!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "48": "/images/guteIcon_square.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.gutefrage.net/*"
+            ],
+            "js": [
+                "blocker.js"
+            ]
+        }
+    ]
+}
